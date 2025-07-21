@@ -2,8 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, TreePine, Scissors, AlertTriangle, Shield } from "lucide-react";
-import aspenTree from "@/assets/aspen-tree-1.png";
-import aspenGrove from "@/assets/aspen-grove.png";
 
 console.log('Index page loading...');
 
@@ -40,7 +38,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <img src={aspenTree} alt="Aspen Tree" className="h-10 w-10" />
+              <TreePine className="h-10 w-10 text-primary" />
               <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">
@@ -68,7 +66,7 @@ const Index = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="flex items-center justify-center mb-8">
-            <img src={aspenTree} alt="Aspen Tree" className="h-16 w-16 mr-4" />
+            <TreePine className="h-16 w-16 mr-4 text-white" />
             <h1 className="text-5xl md:text-7xl font-bold">
               SAWPIT TREE COMPANY
             </h1>
@@ -77,7 +75,7 @@ const Index = () => {
             Professional Tree Services in the Colorado Rockies
           </p>
           <p className="text-lg md:text-xl mb-12 opacity-90">
-            Serving Telluride, Aspen, and surrounding mountain communities
+            Serving Telluride and surrounding mountain communities
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
@@ -88,11 +86,6 @@ const Index = () => {
               Free Estimate
             </Button>
           </div>
-        </div>
-        
-        {/* Decorative aspen grove */}
-        <div className="absolute bottom-0 left-0 right-0 opacity-20">
-          <img src={aspenGrove} alt="Aspen Grove" className="w-full h-32 object-cover object-bottom" />
         </div>
       </section>
 
@@ -167,7 +160,7 @@ const Index = () => {
                 <CardTitle>Service Area</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-medium">Telluride & Aspen</p>
+                <p className="text-lg font-medium">Telluride Area</p>
                 <p className="text-muted-foreground">Mountain communities</p>
               </CardContent>
             </Card>
@@ -179,7 +172,7 @@ const Index = () => {
       <footer className="bg-card border-t border-border py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <img src={aspenTree} alt="Aspen Tree" className="h-8 w-8" />
+            <TreePine className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold">Sawpit Tree Company</span>
           </div>
           <p className="text-muted-foreground">
