@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TreePine, Award, Users, Shield, Instagram } from "lucide-react";
+import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -19,13 +20,13 @@ const About = () => {
                 Home
               </Link>
               <a href="/#services" className="text-muted-foreground hover:text-primary transition-colors">
-                Services
+                Tree Services
               </a>
-              <span className="text-primary font-medium">About</span>
+              <span className="text-primary font-medium">About Sam</span>
               <a href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>
-              <Button>Get Quote</Button>
+              <Button>Get Free Quote</Button>
             </div>
           </div>
         </div>
@@ -36,10 +37,11 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Meet Sam
+              Meet Sam: Telluride's Trusted Tree Expert
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Local Telluride tree care expert with years of experience serving our mountain community
+              ISA Certified Arborist with 15+ years serving Telluride, Mountain Village, and San Miguel County. 
+              Your local tree care professional who understands Colorado mountain trees.
             </p>
           </div>
         </div>
@@ -48,25 +50,28 @@ const About = () => {
       {/* About Sam Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Your Local Tree Care Professional
+                Your Local Telluride Tree Care Professional
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
                   Sam has been a proud Telluride resident for over 15 years, developing an intimate 
                   knowledge of our unique mountain environment and the specific challenges trees face 
-                  in our high-altitude climate.
+                  in our high-altitude climate. From summer storm damage to winter snow load issues, 
+                  Sam understands the year-round tree care needs of San Miguel County properties.
                 </p>
                 <p>
-                  With extensive training in arboriculture and a deep passion for preserving the 
-                  natural beauty of our mountain community, Sam founded Sawpit Tree Company to provide 
-                  professional, reliable tree services that locals can trust.
+                  As an ISA Certified Arborist with extensive training in mountain forest management, 
+                  Sam founded Sawpit Tree Company to provide professional, reliable tree services that 
+                  Telluride locals can trust. Whether it's emergency tree removal after a summer storm 
+                  or preventive pruning before winter, Sam brings both expertise and local knowledge to every job.
                 </p>
                 <p>
-                  When not caring for trees, you can find Sam skiing the local slopes, hiking the 
-                  mountain trails, or volunteering with local environmental conservation efforts.
+                  When not caring for trees throughout the Telluride area, you can find Sam skiing the 
+                  local slopes, hiking the mountain trails around Mountain Village and Ophir, or 
+                  volunteering with local environmental conservation efforts to preserve our beautiful mountain ecosystem.
                 </p>
               </div>
             </div>
@@ -74,23 +79,25 @@ const About = () => {
               <Card>
                 <CardHeader>
                   <Award className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>Certified Arborist</CardTitle>
+                  <CardTitle>ISA Certified Arborist</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    ISA Certified with specialized training in high-altitude tree care and mountain forest management.
+                    International Society of Arboriculture certification with specialized training in 
+                    high-altitude tree care, mountain forest management, and Colorado species expertise.
                   </CardDescription>
                 </CardContent>
               </Card>
               
               <Card>
                 <CardHeader>
-                  <Users className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>Community Focused</CardTitle>
+                  <MapPin className="h-8 w-8 text-primary mb-2" />
+                  <CardTitle>Deep Local Knowledge</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    15+ years serving Telluride and surrounding mountain communities with personalized service.
+                    15+ years serving Telluride, Mountain Village, Ophir, and surrounding San Miguel County 
+                    communities with personalized tree care service and emergency response.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -102,10 +109,40 @@ const About = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    Complete licensing and comprehensive insurance coverage for your peace of mind.
+                    Complete Colorado state licensing, comprehensive liability insurance, and worker's 
+                    compensation coverage for your complete peace of mind on every tree service project.
                   </CardDescription>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+
+          {/* Local Expertise Section */}
+          <div className="bg-muted/30 rounded-lg p-8 mb-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
+              Why Local Telluride Tree Expertise Matters
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <TreePine className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Mountain Species Knowledge</h4>
+                <p className="text-muted-foreground">Expert care for aspen, spruce, fir, and pine trees common in the Telluride area</p>
+              </div>
+              <div className="text-center">
+                <Clock className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Seasonal Timing</h4>
+                <p className="text-muted-foreground">Knows optimal pruning and removal times for Colorado's short growing season</p>
+              </div>
+              <div className="text-center">
+                <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Weather Challenges</h4>
+                <p className="text-muted-foreground">Experienced with high winds, heavy snow loads, and sudden summer storms</p>
+              </div>
+              <div className="text-center">
+                <Users className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Community Trust</h4>
+                <p className="text-muted-foreground">Established relationships throughout Mountain Village and San Miguel County</p>
+              </div>
             </div>
           </div>
         </div>
@@ -116,10 +153,11 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              See Our Work in Action
+              See Our Telluride Tree Work in Action
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Follow us on Instagram for behind-the-scenes videos and project highlights
+              Follow us on Instagram for behind-the-scenes videos of tree removal projects 
+              throughout Telluride, Mountain Village, and the surrounding mountain communities
             </p>
             <Button size="lg" className="text-lg px-8 py-3">
               <Instagram className="mr-2 h-5 w-5" />
@@ -129,15 +167,56 @@ const About = () => {
           
           {/* Instagram Preview Placeholder */}
           <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
+            {[
+              "Emergency tree removal - Mountain Village storm damage",
+              "Aspen grove pruning - Telluride residential property", 
+              "Large pine removal - San Miguel County ranch"
+            ].map((description, i) => (
               <Card key={i} className="overflow-hidden">
                 <div className="aspect-square bg-muted flex items-center justify-center">
                   <Instagram className="h-12 w-12 text-muted-foreground" />
                 </div>
                 <CardContent className="p-4">
-                  <p className="text-sm text-muted-foreground">
-                    Instagram content will appear here once connected
+                  <p className="text-sm text-muted-foreground font-medium">
+                    {description}
                   </p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Instagram video preview - follow for full content
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Serving All of San Miguel County
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Professional tree services throughout the greater Telluride area
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { area: "Telluride, Colorado", description: "Downtown and residential tree services" },
+              { area: "Mountain Village", description: "Ski resort and luxury home tree care" },
+              { area: "Ophir", Colorado", description: "Rural and ranch property tree management" },
+              { area: "Sawpit Area", description: "Remote property access and emergency services" },
+              { area: "Placerville", description: "Historic area tree preservation and removal" },
+              { area: "San Miguel County", description: "Complete county-wide coverage available" }
+            ].map((location) => (
+              <Card key={location.area} className="text-center">
+                <CardHeader>
+                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <CardTitle className="text-lg">{location.area}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>{location.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -149,17 +228,19 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ready to Work with Sam?
+            Ready to Work with Telluride's Tree Expert?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Get a free consultation and see why Telluride trusts Sawpit Tree Company
+            Get a free consultation from Sam and see why Telluride, Mountain Village, and 
+            San Miguel County trust Sawpit Tree Company for all their tree care needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3">
-              Call (970) 555-0123
+              <Phone className="mr-2 h-5 w-5" />
+              Call Sam: (970) 555-0123
             </Button>
             <Button size="lg" className="text-lg px-8 py-3">
-              Free Estimate
+              Free Tree Assessment
             </Button>
           </div>
         </div>
@@ -173,7 +254,7 @@ const About = () => {
             <span className="text-xl font-bold">Sawpit Tree Company</span>
           </div>
           <p className="text-muted-foreground">
-            Professional tree services you can trust. Licensed, insured, and locally owned.
+            Professional tree services you can trust. Licensed, insured, and locally owned in Telluride, Colorado.
           </p>
         </div>
       </footer>
