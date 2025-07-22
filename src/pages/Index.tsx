@@ -45,6 +45,9 @@ const Index = () => {
               <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
                 Services
               </a>
+              <a href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                About
+              </a>
               <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>
@@ -82,7 +85,7 @@ const Index = () => {
               <Phone className="mr-2 h-5 w-5" />
               Call Now: (970) 555-0123
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
               Free Estimate
             </Button>
           </div>
