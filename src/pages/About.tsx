@@ -1,11 +1,16 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone, CheckCircle, Zap, TrendingUp, Leaf } from "lucide-react";
+import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -37,10 +42,6 @@ const About = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Meet Sam: Telluride's Trusted Tree Expert
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              ISA Certified Arborist with 15+ years serving Telluride, Mountain Village, and San Miguel County. 
-              Your local tree care professional who understands Colorado mountain trees.
-            </p>
           </div>
         </div>
       </section>
@@ -49,20 +50,26 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Your Local Telluride Tree Care Professional
-              </h2>
-              <div className="space-y-4 text-lg text-muted-foreground">
+            <div className="space-y-6">
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Trees are a vital part of your property's landscape, adding beauty, value, and environmental benefits. But caring for them properly takes skill, experience, and the right tools. That's where an ISA Certified Arborist comes in.
+                  Sam Schlepphorst, the owner of the company, brings over a decade of hands-on experience in professional tree care throughout the Telluride and Mountain Village areas. With a strong reputation for quality, safety, and environmental stewardship, Sam has become a trusted name in the regional arboriculture community.
+                </p>
+                <p>
+                  His academic background includes a degree in Natural Resources with a concentration in Landscape Ecology from the University of Vermont, where he graduated in 2012. This foundation gives Sam a comprehensive understanding of ecological systems, forest health, and the intricate relationships between trees and their surrounding environments.
+                </p>
+                <p>
+                  As a Certified Arborist with the International Society of Arboriculture (ISA), Sam combines scientific expertise with practical skill. He specializes in technical tree work, particularly in challenging environments that require careful planning, precision, and critical thinking. His work reflects a deep respect for the natural landscape, with an emphasis on sustainable practices that preserve the integrity of the region's forests.
+                </p>
+                <p>
+                  Sam lives down valley from Telluride and is deeply connected to the local community. When he's not in the canopy, you'll likely find him exploring the outdoors, mountain biking, skiing, or enjoying time with family and friends in the San Juan Mountains.
                 </p>
               </div>
             </div>
             <div>
               <img 
                 src="/lovable-uploads/3c32e789-3fa1-4017-ad90-55b698ddd5e4.png" 
-                alt="Sam working professionally on tree removal in Telluride" 
+                alt="Sam Schlepphorst working professionally on tree removal in Telluride" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -109,63 +116,6 @@ const About = () => {
             </Card>
           </div>
 
-          {/* Why Hire an Arborist Section */}
-          <div className="bg-muted/30 rounded-lg p-8 mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Why Hire an Arborist?
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <CheckCircle className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Expertise That Protects Your Trees</h4>
-                <p className="text-muted-foreground">Arborists are trained in the science and art of tree care. They understand how to assess tree health, diagnose issues, and recommend the best course of action—whether it's pruning, disease treatment, or safe removal.</p>
-              </div>
-              <div className="text-center">
-                <Zap className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Safety First</h4>
-                <p className="text-muted-foreground">Tree work can be dangerous. From climbing tall trees to removing large branches, it requires knowledge of proper safety protocols and specialized equipment. Arborists are trained to perform these tasks safely, minimizing risk to your home, family, and property.</p>
-              </div>
-              <div className="text-center">
-                <TrendingUp className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Long-Term Value</h4>
-                <p className="text-muted-foreground">Improper tree care can lead to permanent damage or even tree loss. A qualified arborist helps ensure your trees thrive for years to come, preserving their structural integrity, health, and value.</p>
-              </div>
-              <div className="text-center">
-                <Leaf className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Environmental Responsibility</h4>
-                <p className="text-muted-foreground">Arborists make informed decisions that benefit both your property and the surrounding ecosystem. They consider native species, local regulations, and sustainable practices in every job they undertake.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Local Expertise Section */}
-          <div className="bg-muted/30 rounded-lg p-8 mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Why Local Telluride Tree Expertise Matters
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <TreePine className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Mountain Species Knowledge</h4>
-                <p className="text-muted-foreground">Expert care for aspen, spruce, fir, and pine trees common in the Telluride area</p>
-              </div>
-              <div className="text-center">
-                <Clock className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Seasonal Timing</h4>
-                <p className="text-muted-foreground">Knows optimal pruning and removal times for Colorado's short growing season</p>
-              </div>
-              <div className="text-center">
-                <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Weather Challenges</h4>
-                <p className="text-muted-foreground">Experienced with high winds, heavy snow loads, and sudden summer storms</p>
-              </div>
-              <div className="text-center">
-                <Users className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">Community Trust</h4>
-                <p className="text-muted-foreground">Established relationships throughout Mountain Village and San Miguel County</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
