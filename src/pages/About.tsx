@@ -61,7 +61,7 @@ const About = () => {
             </div>
             <div>
               <img 
-                src="/lovable-uploads/b957e29a-59f1-4f64-a38f-5b9e3bd9499d.png" 
+                src="/lovable-uploads/02d6d245-06b8-4553-b729-237cdd32a2cb.png" 
                 alt="Sam working professionally on tree removal in Telluride" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
