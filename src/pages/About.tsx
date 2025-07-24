@@ -124,7 +124,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/f69024ac-6287-4156-b8dc-a62605ce4827.png" 
                 alt="ISA Certified Arborist Logo" 
-                className="w-32 h-auto mx-auto mb-4"
+                className="w-48 h-auto mx-auto mb-4"
               />
               <div className="text-sm font-medium text-foreground">
                 <div>Samuel Schlepphorst</div>
@@ -132,8 +132,8 @@ const About = () => {
               </div>
             </div>
 
-            {/* Credential Cards */}
-            <div className="grid md:grid-cols-3 gap-4 flex-1">
+            {/* Credential Cards - Stacked Vertically */}
+            <div className="grid grid-cols-1 gap-4 flex-1 max-w-sm">
               <Card className="text-center">
                 <CardHeader className="pb-3">
                   <Award className="h-6 w-6 text-primary mx-auto mb-2" />
