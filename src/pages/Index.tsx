@@ -123,7 +123,7 @@ const Index = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Tree Removal Services in Telluride, Colorado
+            Sawpit Tree Company
           </h1>
           <div className="flex items-center justify-center mb-8">
             <TreePine className="h-12 w-12 mr-4 text-white" />
@@ -132,7 +132,7 @@ const Index = () => {
             </h2>
           </div>
           <p className="text-xl md:text-2xl mb-6 font-medium">
-            Licensed Arborist | Emergency Tree Services | Mountain Village & San Miguel County
+            Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County
           </p>
           <p className="text-lg md:text-xl mb-12 opacity-90">
             Professional tree removal, pruning, and emergency services in Colorado's high country
@@ -191,11 +191,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Contact Telluride's Premier Tree Service Company
-            </h2>
-            <p className="text-xl text-muted-foreground">
               Ready to get started? Contact Sam for a free consultation and estimate
-            </p>
+            </h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -245,7 +242,7 @@ const Index = () => {
             </div>
             <p className="text-muted-foreground mb-4">
               Professional tree removal and emergency services in Telluride, Colorado. 
-              Licensed, insured, and locally owned by certified arborist Sam.
+              Certified, insured and locally owned.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <span>Tree Removal Telluride</span>
