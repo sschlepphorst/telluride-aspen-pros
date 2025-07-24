@@ -1,8 +1,9 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone } from "lucide-react";
+import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone, CheckCircle, Zap, TrendingUp, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
+import mountainLandscape from "@/assets/mountain-landscape.png";
 
 const About = () => {
   return (
@@ -57,63 +58,86 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  Sam has been a proud Telluride resident for over 15 years, developing an intimate 
-                  knowledge of our unique mountain environment and the specific challenges trees face 
-                  in our high-altitude climate. From summer storm damage to winter snow load issues, 
-                  Sam understands the year-round tree care needs of San Miguel County properties.
-                </p>
-                <p>
-                  As an ISA Certified Arborist with extensive training in mountain forest management, 
-                  Sam founded Sawpit Tree Company to provide professional, reliable tree services that 
-                  Telluride locals can trust. Whether it's emergency tree removal after a summer storm 
-                  or preventive pruning before winter, Sam brings both expertise and local knowledge to every job.
-                </p>
-                <p>
-                  When not caring for trees throughout the Telluride area, you can find Sam skiing the 
-                  local slopes, hiking the mountain trails around Mountain Village and Ophir, or 
-                  volunteering with local environmental conservation efforts to preserve our beautiful mountain ecosystem.
+                  Trees are a vital part of your property's landscape, adding beauty, value, and environmental benefits. But caring for them properly takes skill, experience, and the right tools. That's where an ISA Certified Arborist comes in.
                 </p>
               </div>
             </div>
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <Award className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>ISA Certified Arborist</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    International Society of Arboriculture certification with specialized training in 
-                    high-altitude tree care, mountain forest management, and Colorado species expertise.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardHeader>
-                  <MapPin className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>Deep Local Knowledge</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    15+ years serving Telluride, Mountain Village, Ophir, and surrounding San Miguel County 
-                    communities with personalized tree care service and emergency response.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardHeader>
-                  <Shield className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>Fully Licensed & Insured</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Complete Colorado state licensing, comprehensive liability insurance, and worker's 
-                    compensation coverage for your complete peace of mind on every tree service project.
-                  </CardDescription>
-                </CardContent>
-              </Card>
+            <div>
+              <img 
+                src={mountainLandscape} 
+                alt="Beautiful autumn mountain landscape near Telluride with aspen trees" 
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-6 mb-16">
+            <Card>
+              <CardHeader>
+                <Award className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>ISA Certified Arborist</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  International Society of Arboriculture certification with specialized training in 
+                  high-altitude tree care, mountain forest management, and Colorado species expertise.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <MapPin className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Deep Local Knowledge</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  15+ years serving Telluride, Mountain Village, Ophir, and surrounding San Miguel County 
+                  communities with personalized tree care service and emergency response.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <Shield className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Certified & Insured</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Complete Colorado state licensing, comprehensive liability insurance, and worker's 
+                  compensation coverage for your complete peace of mind on every tree service project.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Why Hire an Arborist Section */}
+          <div className="bg-muted/30 rounded-lg p-8 mb-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
+              Why Hire an Arborist?
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <CheckCircle className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Expertise That Protects Your Trees</h4>
+                <p className="text-muted-foreground">Arborists are trained in the science and art of tree care. They understand how to assess tree health, diagnose issues, and recommend the best course of action—whether it's pruning, disease treatment, or safe removal.</p>
+              </div>
+              <div className="text-center">
+                <Zap className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Safety First</h4>
+                <p className="text-muted-foreground">Tree work can be dangerous. From climbing tall trees to removing large branches, it requires knowledge of proper safety protocols and specialized equipment. Arborists are trained to perform these tasks safely, minimizing risk to your home, family, and property.</p>
+              </div>
+              <div className="text-center">
+                <TrendingUp className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Long-Term Value</h4>
+                <p className="text-muted-foreground">Improper tree care can lead to permanent damage or even tree loss. A qualified arborist helps ensure your trees thrive for years to come, preserving their structural integrity, health, and value.</p>
+              </div>
+              <div className="text-center">
+                <Leaf className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h4 className="font-bold mb-2">Environmental Responsibility</h4>
+                <p className="text-muted-foreground">Arborists make informed decisions that benefit both your property and the surrounding ecosystem. They consider native species, local regulations, and sustainable practices in every job they undertake.</p>
+              </div>
             </div>
           </div>
 
@@ -237,7 +261,7 @@ const About = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3">
               <Phone className="mr-2 h-5 w-5" />
-              Call Sam: (970) 555-0123
+              Call Sam: (970) 708-4700
             </Button>
             <Button size="lg" className="text-lg px-8 py-3">
               Free Tree Assessment
@@ -254,7 +278,7 @@ const About = () => {
             <span className="text-xl font-bold">Sawpit Tree Company</span>
           </div>
           <p className="text-muted-foreground">
-            Professional tree services you can trust. Licensed, insured, and locally owned in Telluride, Colorado.
+            Professional tree services you can trust. Certified, insured and locally owned.
           </p>
         </div>
       </footer>
