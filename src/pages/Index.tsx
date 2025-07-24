@@ -149,42 +149,32 @@ const Index = () => {
         </div>
       </section>
 
-       {/* Service Areas Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Serving Telluride and Surrounding Areas
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Professional tree services throughout the San Miguel County region
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20">
+      <section id="services" className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Professional Tree Services in Telluride
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-2">
               From emergency storm damage cleanup to routine tree maintenance, our certified arborist 
               provides comprehensive tree care solutions for Colorado mountain properties
             </p>
+            <p className="text-lg text-muted-foreground">
+              Serving Telluride, Mountain Village, and San Miguel County region
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {services.map((service) => (
               <Card key={service.title} className="tree-shadow hover:shadow-lg transition-shadow">
-                <CardHeader className="text-center">
-                  <service.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardHeader className="text-center pb-3">
+                  <service.icon className="h-8 w-8 text-primary mx-auto mb-2" />
+                  <CardTitle className="text-sm font-semibold leading-tight">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-center">
+                <CardContent className="pt-0">
+                  <CardDescription className="text-center text-xs leading-relaxed">
                     {service.description}
                   </CardDescription>
                 </CardContent>
