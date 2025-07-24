@@ -5,7 +5,6 @@ import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone } from 
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-
 const About = () => {
   useEffect(() => {
     document.title = "About";
