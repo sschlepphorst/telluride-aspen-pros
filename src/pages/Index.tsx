@@ -92,7 +92,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <img src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" alt="Sawpit Tree Company Logo" className="h-10 w-10" />
+              <img src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" alt="Sawpit Tree Company Logo" className="h-8 w-8" />
               <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">
