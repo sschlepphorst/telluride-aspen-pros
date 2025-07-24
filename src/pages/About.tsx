@@ -133,7 +133,7 @@ const About = () => {
             </div>
 
             {/* Credential Cards - Aligned with Image */}
-            <div className="grid grid-cols-1 gap-4 flex-1 max-w-sm mt-4">
+            <div className="grid grid-cols-2 gap-4 flex-1 max-w-md mt-4">
               <Card className="text-center">
                 <CardHeader className="pb-3">
                   <Award className="h-6 w-6 text-primary mx-auto mb-2" />
