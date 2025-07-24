@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TreePine, Award, Users, Shield, Instagram, MapPin, Clock, Phone, CheckCircle, Zap, TrendingUp, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
-import mountainLandscape from "@/assets/mountain-landscape.png";
+
 
 const About = () => {
   return (
@@ -17,9 +17,6 @@ const About = () => {
               <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
             </Link>
             <div className="hidden md:flex items-center space-x-6">
-              <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
-                Home
-              </Link>
               <a href="/#services" className="text-muted-foreground hover:text-primary transition-colors">
                 Tree Services
               </a>
@@ -64,8 +61,8 @@ const About = () => {
             </div>
             <div>
               <img 
-                src={mountainLandscape} 
-                alt="Beautiful autumn mountain landscape near Telluride with aspen trees" 
+                src="/lovable-uploads/02d6d245-06b8-4553-b729-237cdd32a2cb.png" 
+                alt="Sam working professionally on tree removal in Telluride" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
