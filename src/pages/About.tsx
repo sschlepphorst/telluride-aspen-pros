@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TreePine, Award, Users, Shield, MapPin, Clock, Phone } from "lucide-react";
+import { TreePine, Award, Users, Shield, MapPin, Clock, Phone, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -136,28 +136,75 @@ const About = () => {
               </div>
             </div>
 
-            {/* Right Column: All Three Credential Cards */}
+            {/* Right Column: Professional Resource Links */}
             <div className="grid grid-cols-1 gap-2">
-              <Card className="text-center">
-                <CardHeader className="pb-2 pt-3">
-                  <Award className="h-5 w-5 text-primary mx-auto mb-1" />
-                  <CardTitle className="text-xs">ISA Certified Arborist</CardTitle>
-                </CardHeader>
-              </Card>
+              <a 
+                href="https://www.isa-arbor.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <Card className="text-center transition-all duration-200 hover:shadow-md hover:scale-105 cursor-pointer">
+                  <CardHeader className="pb-2 pt-3">
+                    <div className="flex items-center justify-center gap-1 mb-1">
+                      <Award className="h-5 w-5 text-primary" />
+                      <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <CardTitle className="text-xs">International Society of Arboriculture</CardTitle>
+                  </CardHeader>
+                </Card>
+              </a>
               
-              <Card className="text-center">
-                <CardHeader className="pb-2 pt-3">
-                  <MapPin className="h-5 w-5 text-primary mx-auto mb-1" />
-                  <CardTitle className="text-xs">Deep Local Knowledge</CardTitle>
-                </CardHeader>
-              </Card>
+              <a 
+                href="https://isarmc.org" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <Card className="text-center transition-all duration-200 hover:shadow-md hover:scale-105 cursor-pointer">
+                  <CardHeader className="pb-2 pt-3">
+                    <div className="flex items-center justify-center gap-1 mb-1">
+                      <MapPin className="h-5 w-5 text-primary" />
+                      <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <CardTitle className="text-xs">ISA Rocky Mountain Chapter</CardTitle>
+                  </CardHeader>
+                </Card>
+              </a>
               
-              <Card className="text-center">
-                <CardHeader className="pb-2 pt-3">
-                  <Shield className="h-5 w-5 text-primary mx-auto mb-1" />
-                  <CardTitle className="text-xs">Certified & Insured</CardTitle>
-                </CardHeader>
-              </Card>
+              <a 
+                href="https://www.cowildfire.org" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <Card className="text-center transition-all duration-200 hover:shadow-md hover:scale-105 cursor-pointer">
+                  <CardHeader className="pb-2 pt-3">
+                    <div className="flex items-center justify-center gap-1 mb-1">
+                      <Shield className="h-5 w-5 text-primary" />
+                      <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <CardTitle className="text-xs">Colorado Wildfire Information</CardTitle>
+                  </CardHeader>
+                </Card>
+              </a>
+
+              <a 
+                href="https://csfs.colostate.edu" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <Card className="text-center transition-all duration-200 hover:shadow-md hover:scale-105 cursor-pointer">
+                  <CardHeader className="pb-2 pt-3">
+                    <div className="flex items-center justify-center gap-1 mb-1">
+                      <TreePine className="h-5 w-5 text-primary" />
+                      <ExternalLink className="h-3 w-3 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <CardTitle className="text-xs">Colorado State Forest Service</CardTitle>
+                  </CardHeader>
+                </Card>
+              </a>
             </div>
           </div>
 
