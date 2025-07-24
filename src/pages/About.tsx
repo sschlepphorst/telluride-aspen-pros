@@ -124,7 +124,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/f69024ac-6287-4156-b8dc-a62605ce4827.png" 
                 alt="ISA Certified Arborist Logo" 
-                className="w-48 h-auto mx-auto mb-4"
+                className="w-64 h-auto mx-auto mb-4"
               />
               <div className="text-sm font-medium text-foreground">
                 <div>Samuel Schlepphorst</div>
@@ -133,25 +133,25 @@ const About = () => {
             </div>
 
             {/* Right Column: All Three Credential Cards */}
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 gap-2">
               <Card className="text-center">
-                <CardHeader className="pb-3">
-                  <Award className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-sm">ISA Certified Arborist</CardTitle>
+                <CardHeader className="pb-2 pt-3">
+                  <Award className="h-5 w-5 text-primary mx-auto mb-1" />
+                  <CardTitle className="text-xs">ISA Certified Arborist</CardTitle>
                 </CardHeader>
               </Card>
               
               <Card className="text-center">
-                <CardHeader className="pb-3">
-                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-sm">Deep Local Knowledge</CardTitle>
+                <CardHeader className="pb-2 pt-3">
+                  <MapPin className="h-5 w-5 text-primary mx-auto mb-1" />
+                  <CardTitle className="text-xs">Deep Local Knowledge</CardTitle>
                 </CardHeader>
               </Card>
               
               <Card className="text-center">
-                <CardHeader className="pb-3">
-                  <Shield className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-sm">Certified & Insured</CardTitle>
+                <CardHeader className="pb-2 pt-3">
+                  <Shield className="h-5 w-5 text-primary mx-auto mb-1" />
+                  <CardTitle className="text-xs">Certified & Insured</CardTitle>
                 </CardHeader>
               </Card>
             </div>
