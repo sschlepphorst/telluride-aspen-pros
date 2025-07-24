@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Mail, MapPin, TreePine, Scissors, AlertTriangle, Shield, Clock, Award } from "lucide-react";
+import { Phone, Mail, MapPin, TreePine, Scissors, AlertTriangle, Shield, Wrench, Zap, Hammer, TreeDeciduous, Eye, FileText, Users } from "lucide-react";
 
 console.log('Index page loading...');
 
@@ -10,24 +10,69 @@ const Index = () => {
 
   const services = [
     {
-      title: "Tree Removal Telluride",
-      description: "Safe and efficient removal of hazardous or unwanted trees in Telluride and Mountain Village",
+      title: "Tree Removal",
+      description: "Safe and efficient removal of hazardous or unwanted trees in Telluride's mountain environment",
       icon: TreePine,
     },
     {
-      title: "Professional Tree Pruning",
-      description: "Expert pruning services to maintain tree health and safety in Colorado's mountain climate",
+      title: "Tree Pruning",
+      description: "Expert pruning services to maintain tree health and safety in Colorado's high altitude climate",
       icon: Scissors,
     },
     {
-      title: "Emergency Tree Services",
-      description: "24/7 emergency response for storm damage and fallen trees throughout San Miguel County",
+      title: "Hazard Tree Removal",
+      description: "Identification and removal of dangerous trees that pose risks to property and safety",
       icon: AlertTriangle,
     },
     {
-      title: "Tree Risk Assessment",
-      description: "Certified arborist inspections and comprehensive tree health evaluations",
+      title: "Tree Cabling and Bracing",
+      description: "Structural support systems to preserve valuable trees and prevent failure",
+      icon: Wrench,
+    },
+    {
+      title: "Storm Clean Up",
+      description: "Rapid response for storm damage cleanup and debris removal throughout the region",
+      icon: Zap,
+    },
+    {
+      title: "Emergency Tree Work",
+      description: "24/7 emergency response for fallen trees and urgent tree hazards",
+      icon: Phone,
+    },
+    {
+      title: "Forestry Projects",
+      description: "Large-scale forest management and timber operations for mountain properties",
+      icon: TreeDeciduous,
+    },
+    {
+      title: "Fire Mitigation",
+      description: "Defensible space creation and fuel reduction to protect properties from wildfire",
       icon: Shield,
+    },
+    {
+      title: "Lot Clearing",
+      description: "Complete lot and land clearing for construction and development projects",
+      icon: Hammer,
+    },
+    {
+      title: "View Clearing / Viewshed",
+      description: "Strategic tree removal and pruning to restore and enhance mountain views",
+      icon: Eye,
+    },
+    {
+      title: "Clearance Pruning",
+      description: "Pruning trees away from structures, power lines, and other infrastructure",
+      icon: Scissors,
+    },
+    {
+      title: "Consulting",
+      description: "Professional arborist consultations for tree health, risk assessment, and management planning",
+      icon: FileText,
+    },
+    {
+      title: "Arborist Services",
+      description: "Comprehensive tree care services from certified arborist expertise",
+      icon: Users,
     },
   ];
 
@@ -104,26 +149,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Service Areas Section */}
+       {/* Service Areas Section */}
       <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Serving Telluride and Surrounding Areas
             </h2>
             <p className="text-xl text-muted-foreground">
               Professional tree services throughout the San Miguel County region
             </p>
-          </div>
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {serviceAreas.map((area) => (
-              <Card key={area} className="text-center">
-                <CardContent className="p-4">
-                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <p className="font-medium text-sm">{area}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
@@ -141,7 +176,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
             {services.map((service) => (
               <Card key={service.title} className="tree-shadow hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
@@ -157,49 +192,9 @@ const Index = () => {
             ))}
           </div>
 
-          {/* Why Choose Us Section */}
-          <div className="bg-muted/30 rounded-lg p-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Why Choose Sawpit Tree Company for Telluride Tree Removal?
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <Award className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">ISA Certified Arborist</h4>
-                <p className="text-muted-foreground">Professional certification with specialized high-altitude tree expertise</p>
-              </div>
-              <div className="text-center">
-                <Clock className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">15+ Years Local Experience</h4>
-                <p className="text-muted-foreground">Deep knowledge of Telluride's unique mountain tree care challenges</p>
-              </div>
-              <div className="text-center">
-                <AlertTriangle className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-bold mb-2">24/7 Emergency Response</h4>
-                <p className="text-muted-foreground">Available for storm damage and hazardous tree emergencies</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Emergency Services CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AlertTriangle className="h-16 w-16 mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Emergency Tree Removal in Telluride
-          </h2>
-          <p className="text-xl mb-8">
-            Storm damage? Fallen tree blocking your driveway? We provide 24/7 emergency tree services 
-            throughout Telluride, Mountain Village, and San Miguel County.
-          </p>
-          <Button size="lg" className="text-lg px-8 py-3 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-            <Phone className="mr-2 h-5 w-5" />
-            Emergency Hotline: (970) 555-0123
-          </Button>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20">
