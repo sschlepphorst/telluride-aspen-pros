@@ -74,45 +74,43 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="grid lg:grid-cols-3 gap-6 mb-16">
-            <Card>
-              <CardHeader>
-                <Award className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>ISA Certified Arborist</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  International Society of Arboriculture certification with specialized training in 
-                  high-altitude tree care, mountain forest management, and Colorado species expertise.
-                </CardDescription>
-              </CardContent>
-            </Card>
-            
-            <Card>
-              <CardHeader>
-                <MapPin className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Deep Local Knowledge</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  15+ years serving Telluride, Mountain Village, Ophir, and surrounding San Miguel County 
-                  communities with personalized tree care service and emergency response.
-                </CardDescription>
-              </CardContent>
-            </Card>
-            
-            <Card>
-              <CardHeader>
-                <Shield className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Certified & Insured</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Complete Colorado state licensing, comprehensive liability insurance, and worker's 
-                  compensation coverage for your complete peace of mind on every tree service project.
-                </CardDescription>
-              </CardContent>
-            </Card>
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-16">
+            {/* ISA Logo and Credentials */}
+            <div className="flex-shrink-0 text-center">
+              <img 
+                src="/lovable-uploads/f69024ac-6287-4156-b8dc-a62605ce4827.png" 
+                alt="ISA Certified Arborist Logo" 
+                className="w-32 h-auto mx-auto mb-4"
+              />
+              <div className="text-sm font-medium text-foreground">
+                <div>Samuel Schlepphorst</div>
+                <div>RM-9075A</div>
+              </div>
+            </div>
+
+            {/* Credential Cards */}
+            <div className="grid md:grid-cols-3 gap-4 flex-1">
+              <Card className="text-center">
+                <CardHeader className="pb-3">
+                  <Award className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <CardTitle className="text-sm">ISA Certified Arborist</CardTitle>
+                </CardHeader>
+              </Card>
+              
+              <Card className="text-center">
+                <CardHeader className="pb-3">
+                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <CardTitle className="text-sm">Deep Local Knowledge</CardTitle>
+                </CardHeader>
+              </Card>
+              
+              <Card className="text-center">
+                <CardHeader className="pb-3">
+                  <Shield className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <CardTitle className="text-sm">Certified & Insured</CardTitle>
+                </CardHeader>
+              </Card>
+            </div>
           </div>
 
         </div>
