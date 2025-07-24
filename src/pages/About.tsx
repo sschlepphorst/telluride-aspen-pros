@@ -121,6 +121,15 @@ const About = () => {
       {/* About Sam Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Professional Resources
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Learn more about the organizations and certifications that guide our commitment to professional tree care
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-start">
             {/* Left Column: ISA Logo and Credentials */}
