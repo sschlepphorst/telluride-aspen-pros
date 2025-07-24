@@ -28,7 +28,7 @@ const About = () => {
               <a href="/#services" className="text-muted-foreground hover:text-primary transition-colors">
                 Tree Services
               </a>
-              <span className="text-primary font-medium">About Sam</span>
+              <span className="text-primary font-medium">About</span>
               <a href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>
