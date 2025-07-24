@@ -43,29 +43,25 @@ const About = () => {
             </h1>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
-              <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
-                <p>
-                  Sam Schlepphorst, the owner of the company, brings over a decade of hands-on experience in professional tree care throughout the Telluride and Mountain Village areas. With a strong reputation for quality, safety, and environmental stewardship, Sam has become a trusted name in the regional arboriculture community.
-                </p>
-                <p>
-                  His academic background includes a degree in Natural Resources with a concentration in Landscape Ecology from the University of Vermont, where he graduated in 2012. This foundation gives Sam a comprehensive understanding of ecological systems, forest health, and the intricate relationships between trees and their surrounding environments.
-                </p>
-                <p>
-                  As a Certified Arborist with the International Society of Arboriculture (ISA), Sam combines scientific expertise with practical skill. He specializes in technical tree work, particularly in challenging environments that require careful planning, precision, and critical thinking. His work reflects a deep respect for the natural landscape, with an emphasis on sustainable practices that preserve the integrity of the region's forests.
-                </p>
-                <p>
-                  Sam lives down valley from Telluride and is deeply connected to the local community. When he's not in the canopy, you'll likely find him exploring the outdoors, mountain biking, skiing, or enjoying time with family and friends in the San Juan Mountains.
-                </p>
-              </div>
-            </div>
-            <div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
               <img 
                 src="/lovable-uploads/3c32e789-3fa1-4017-ad90-55b698ddd5e4.png" 
                 alt="Sam Schlepphorst working professionally on tree removal in Telluride" 
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
+                className="float-right ml-6 mb-4 w-64 h-48 object-cover rounded-lg shadow-lg md:w-80 md:h-60"
               />
+              <p>
+                Sam Schlepphorst, the owner of the company, brings over a decade of hands-on experience in professional tree care throughout the Telluride and Mountain Village areas. With a strong reputation for quality, safety, and environmental stewardship, Sam has become a trusted name in the regional arboriculture community.
+              </p>
+              <p>
+                His academic background includes a degree in Natural Resources with a concentration in Landscape Ecology from the University of Vermont, where he graduated in 2012. This foundation gives Sam a comprehensive understanding of ecological systems, forest health, and the intricate relationships between trees and their surrounding environments.
+              </p>
+              <p>
+                As a Certified Arborist with the International Society of Arboriculture (ISA), Sam combines scientific expertise with practical skill. He specializes in technical tree work, particularly in challenging environments that require careful planning, precision, and critical thinking. His work reflects a deep respect for the natural landscape, with an emphasis on sustainable practices that preserve the integrity of the region's forests.
+              </p>
+              <p>
+                Sam lives down valley from Telluride and is deeply connected to the local community. When he's not in the canopy, you'll likely find him exploring the outdoors, mountain biking, skiing, or enjoying time with family and friends in the San Juan Mountains.
+              </p>
             </div>
           </div>
         </div>
