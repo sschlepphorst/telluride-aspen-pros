@@ -133,7 +133,7 @@ const About = () => {
             </div>
 
             {/* Right Column: All Three Credential Cards */}
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-2 gap-4 max-w-lg">
               <Card className="text-center">
                 <CardHeader className="pb-3">
                   <Award className="h-6 w-6 text-primary mx-auto mb-2" />
