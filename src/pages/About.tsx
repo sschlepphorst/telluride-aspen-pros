@@ -32,7 +32,9 @@ const About = () => {
               <a href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>
-              <Button>Get Free Quote</Button>
+              <Button asChild>
+                <a href="mailto:sschlepphorst@icloud.com?subject=Free%20Tree%20Service%20Quote%20Request">Get Free Quote</a>
+              </Button>
             </div>
           </div>
         </div>
