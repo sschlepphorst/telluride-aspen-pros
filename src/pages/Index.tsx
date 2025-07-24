@@ -92,7 +92,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <TreePine className="h-10 w-10 text-primary" />
+              <img src="/lovable-uploads/b957e29a-59f1-4f64-a38f-5b9e3bd9499d.png" alt="Sawpit Tree Company Logo" className="h-10 w-10" />
               <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">
@@ -272,7 +272,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <TreePine className="h-8 w-8 text-primary" />
+              <img src="/lovable-uploads/b957e29a-59f1-4f64-a38f-5b9e3bd9499d.png" alt="Sawpit Tree Company Logo" className="h-8 w-8" />
               <span className="text-xl font-bold">Sawpit Tree Company</span>
             </div>
             <p className="text-muted-foreground mb-4">
