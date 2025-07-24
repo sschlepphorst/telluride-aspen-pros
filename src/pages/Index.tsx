@@ -100,7 +100,7 @@ const Index = () => {
                 Tree Services
               </a>
               <a href="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                About Sam
+                About
               </a>
               <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
