@@ -118,7 +118,7 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-16">
+          <div className="flex flex-col lg:flex-row items-start gap-8 mb-16">
             {/* ISA Logo and Credentials */}
             <div className="flex-shrink-0 text-center">
               <img 
@@ -132,8 +132,8 @@ const About = () => {
               </div>
             </div>
 
-            {/* Credential Cards - Stacked Vertically */}
-            <div className="grid grid-cols-1 gap-4 flex-1 max-w-sm">
+            {/* Credential Cards - Aligned with Image */}
+            <div className="grid grid-cols-1 gap-4 flex-1 max-w-sm mt-4">
               <Card className="text-center">
                 <CardHeader className="pb-3">
                   <Award className="h-6 w-6 text-primary mx-auto mb-2" />
