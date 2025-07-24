@@ -126,98 +126,139 @@ const About = () => {
               Professional Resources & Industry Standards
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Staying informed with the latest in arboriculture and forest management
+              ISA certified expertise backed by industry-leading resources
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <a
-              href="https://www.isa-arbor.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="text-center h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
-                <CardHeader>
-                  <Award className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <CardTitle className="text-lg flex items-center justify-center gap-2 group-hover:text-primary transition-colors">
-                    ISA International Society of Arboriculture
-                    <ExternalLink className="h-4 w-4" />
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* ISA Certified Arborist Credential */}
+            <div className="lg:col-span-1">
+              <Card className="text-center h-full">
+                <CardHeader className="pb-4">
+                  <Award className="h-16 w-16 text-primary mx-auto mb-4" />
+                  <CardTitle className="text-xl mb-3">
+                    ISA Certified Arborist
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>
-                    International certification standards and arboriculture best practices
+                  <CardDescription className="mb-4">
+                    Sam Schlepphorst holds ISA certification, ensuring professional expertise in tree care, safety, and industry best practices.
                   </CardDescription>
+                  <div className="text-sm text-primary font-semibold">
+                    Professional Certification
+                  </div>
                 </CardContent>
               </Card>
-            </a>
+            </div>
 
-            <a
-              href="https://isarmc.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="text-center h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
-                <CardHeader>
-                  <Mountain className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <CardTitle className="text-lg flex items-center justify-center gap-2 group-hover:text-primary transition-colors">
-                    ISA Rocky Mountain Chapter
-                    <ExternalLink className="h-4 w-4" />
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Regional arboriculture community and continuing education
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </a>
+            {/* Professional Resources Grid */}
+            <div className="lg:col-span-2">
+              <div className="grid md:grid-cols-2 gap-4">
+                <a
+                  href="https://www.isa-arbor.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+                    <CardHeader className="pb-2">
+                      <div className="flex items-start space-x-3">
+                        <BookOpen className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                        <div className="flex-1">
+                          <CardTitle className="text-base flex items-center gap-2 group-hover:text-primary transition-colors">
+                            ISA International
+                            <ExternalLink className="h-3 w-3" />
+                          </CardTitle>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <CardDescription className="text-sm">
+                        Certification standards and best practices
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </a>
 
-            <a
-              href="https://www.cowildfire.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="text-center h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
-                <CardHeader>
-                  <Flame className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <CardTitle className="text-lg flex items-center justify-center gap-2 group-hover:text-primary transition-colors">
-                    Colorado Wildfire Information
-                    <ExternalLink className="h-4 w-4" />
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Wildfire prevention and community safety resources
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </a>
+                <a
+                  href="https://isarmc.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+                    <CardHeader className="pb-2">
+                      <div className="flex items-start space-x-3">
+                        <Mountain className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                        <div className="flex-1">
+                          <CardTitle className="text-base flex items-center gap-2 group-hover:text-primary transition-colors">
+                            ISA Rocky Mountain
+                            <ExternalLink className="h-3 w-3" />
+                          </CardTitle>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <CardDescription className="text-sm">
+                        Regional community and education
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </a>
 
-            <a
-              href="https://csfs.colostate.edu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="text-center h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
-                <CardHeader>
-                  <FileText className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <CardTitle className="text-lg flex items-center justify-center gap-2 group-hover:text-primary transition-colors">
-                    Colorado State Forest Service
-                    <ExternalLink className="h-4 w-4" />
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Technical forestry assistance and forest management guidance
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </a>
+                <a
+                  href="https://www.cowildfire.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+                    <CardHeader className="pb-2">
+                      <div className="flex items-start space-x-3">
+                        <Flame className="h-6 w-6 text-orange-500 flex-shrink-0 mt-1" />
+                        <div className="flex-1">
+                          <CardTitle className="text-base flex items-center gap-2 group-hover:text-primary transition-colors">
+                            Colorado Wildfire
+                            <ExternalLink className="h-3 w-3" />
+                          </CardTitle>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <CardDescription className="text-sm">
+                        Prevention and safety resources
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a
+                  href="https://csfs.colostate.edu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+                    <CardHeader className="pb-2">
+                      <div className="flex items-start space-x-3">
+                        <TreePine className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                        <div className="flex-1">
+                          <CardTitle className="text-base flex items-center gap-2 group-hover:text-primary transition-colors">
+                            CO State Forest Service
+                            <ExternalLink className="h-3 w-3" />
+                          </CardTitle>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <CardDescription className="text-sm">
+                        Technical forestry assistance
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
