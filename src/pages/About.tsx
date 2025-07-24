@@ -118,9 +118,9 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="flex flex-col lg:flex-row items-start gap-8 mb-16">
-            {/* ISA Logo and Credentials */}
-            <div className="flex-shrink-0 text-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-start">
+            {/* Left Column: ISA Logo and Credentials */}
+            <div className="text-center">
               <img 
                 src="/lovable-uploads/f69024ac-6287-4156-b8dc-a62605ce4827.png" 
                 alt="ISA Certified Arborist Logo" 
@@ -132,8 +132,8 @@ const About = () => {
               </div>
             </div>
 
-            {/* Credential Cards - Aligned with Image */}
-            <div className="grid grid-cols-2 gap-4 flex-1 max-w-md mt-4">
+            {/* Right Column: All Three Credential Cards */}
+            <div className="grid grid-cols-1 gap-4">
               <Card className="text-center">
                 <CardHeader className="pb-3">
                   <Award className="h-6 w-6 text-primary mx-auto mb-2" />
