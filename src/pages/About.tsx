@@ -118,8 +118,52 @@ const About = () => {
         </div>
       </section>
 
-      {/* Instagram Section */}
+      {/* Why Hire an Arborist Section */}
       <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Why Hire an Arborist?
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Trees are a vital part of your property's landscape, adding beauty, value, and environmental benefits. But caring for them properly takes skill, experience, and the right tools. That's where an ISA Certified Arborist comes in.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-foreground">Expertise That Protects Your Trees</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Arborists are trained in the science and art of tree care. They understand how to assess tree health, diagnose issues, and recommend the best course of action—whether it's pruning, disease treatment, or safe removal.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-foreground">Safety First</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Tree work can be dangerous. From climbing tall trees to removing large branches, it requires knowledge of proper safety protocols and specialized equipment. Arborists are trained to perform these tasks safely, minimizing risk to your home, family, and property.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-foreground">Long-Term Value</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Improper tree care can lead to permanent damage or even tree loss. A qualified arborist helps ensure your trees thrive for years to come, preserving their structural integrity, health, and value.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-foreground">Environmental Responsibility</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Arborists make informed decisions that benefit both your property and the surrounding ecosystem. They consider native species, local regulations, and sustainable practices in every job they undertake.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Section */}
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
