@@ -125,12 +125,6 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Sawpit Tree Company
           </h1>
-          <div className="flex items-center justify-center mb-8">
-            <TreePine className="h-12 w-12 mr-4 text-white" />
-            <h2 className="text-3xl md:text-4xl font-bold">
-              SAWPIT TREE COMPANY
-            </h2>
-          </div>
           <p className="text-xl md:text-2xl mb-6 font-medium">
             Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County
           </p>
@@ -140,7 +134,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
               <Phone className="mr-2 h-5 w-5" />
-              Call Now: (970) 555-0123
+              Call Now: (970) 708-4700
             </Button>
             <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
               Free Estimate
@@ -202,7 +196,7 @@ const Index = () => {
                 <CardTitle>Call for Tree Service</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-medium">(970) 555-0123</p>
+                <p className="text-lg font-medium">(970) 708-4700</p>
                 <p className="text-muted-foreground">24/7 Emergency Tree Removal</p>
               </CardContent>
             </Card>
@@ -213,7 +207,7 @@ const Index = () => {
                 <CardTitle>Email for Quotes</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-medium">info@sawpittree.com</p>
+                <p className="text-lg font-medium">sschlepphorst@icloud.com</p>
                 <p className="text-muted-foreground">Free tree removal estimates</p>
               </CardContent>
             </Card>
