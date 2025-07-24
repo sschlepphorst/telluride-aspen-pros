@@ -118,7 +118,7 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-start">
             {/* Left Column: ISA Logo and Credentials */}
             <div className="text-center">
               <img 
