@@ -37,20 +37,15 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Meet Sam: Telluride's Trusted Tree Expert
             </h1>
           </div>
-        </div>
-      </section>
-
-      {/* About Sam Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
-              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
                 <p>
                   Sam Schlepphorst, the owner of the company, brings over a decade of hands-on experience in professional tree care throughout the Telluride and Mountain Village areas. With a strong reputation for quality, safety, and environmental stewardship, Sam has become a trusted name in the regional arboriculture community.
                 </p>
@@ -73,6 +68,12 @@ const About = () => {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* About Sam Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="grid lg:grid-cols-3 gap-6 mb-16">
             <Card>
