@@ -270,12 +270,12 @@ const About = () => {
             <Button asChild className="text-base px-6 py-3">
               <a href="tel:+19707084700" className="flex items-center">
                 <Phone className="mr-2 h-4 w-4" />
-                <div className="text-left">
-                  <div className="font-semibold">Call (970) 708-4700</div>
-                  <div className="text-xs opacity-90 max-w-xs">We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back</div>
-                </div>
+                Call (970) 708-4700
               </a>
             </Button>
+            <p className="text-muted-foreground text-sm text-center mt-4 max-w-md mx-auto">
+              We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back
+            </p>
           </div>
         </div>
       </section>
