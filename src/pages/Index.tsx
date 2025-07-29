@@ -156,7 +156,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Sawpit Tree Company
           </h1>
-          <p className="text-xl md:text-2xl mb-6 font-medium">
+          <p className="text-lg md:text-xl mb-6 font-medium">
             Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County | Fully Insured
           </p>
           <p className="text-lg md:text-xl mb-12 opacity-90">
