@@ -267,9 +267,14 @@ const About = () => {
             San Miguel County trust Sawpit Tree Company for all their tree care needs
           </p>
           <div className="flex justify-center">
-            <Button size="lg" className="text-lg px-8 py-3">
-              <Phone className="mr-2 h-5 w-5" />
-              24 hour response and text for emergencies - immediate call back
+            <Button asChild className="text-base px-6 py-3">
+              <a href="tel:+19707084700" className="flex items-center">
+                <Phone className="mr-2 h-4 w-4" />
+                <div className="text-left">
+                  <div className="font-semibold">(970) 708-4700</div>
+                  <div className="text-xs opacity-90">Emergency 24/7</div>
+                </div>
+              </a>
             </Button>
           </div>
         </div>
