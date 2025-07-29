@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { LazyImage } from "./LazyImage";
 
 export const Hero = () => {
   return (
-    <section 
-      className="relative py-16 md:py-32 text-white overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/c3d81b59-4845-4bcf-8bbe-fb1a70ff99c0.png)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section className="relative py-16 md:py-32 text-white overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/c3d81b59-4845-4bcf-8bbe-fb1a70ff99c0.png)`
+        }}
+        aria-hidden="true"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
           Sawpit Tree Company

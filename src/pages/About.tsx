@@ -5,16 +5,23 @@ import { TreePine, Award, Shield, MapPin, Phone, ExternalLink } from "lucide-rea
 import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { LazyImage } from "@/components/LazyImage";
 import { detailedServiceAreas } from "@/constants/serviceAreas";
 
 const About = () => {
   useEffect(() => {
-    document.title = "About";
+    document.title = "About Sawpit Tree Company | Certified Arborist Telluride CO | Sam Schlepphorst";
+    document.querySelector('meta[name="description"]')?.setAttribute(
+      'content', 
+      'Meet Sam Schlepphorst, ISA Certified Arborist and owner of Sawpit Tree Company. Professional tree services in Telluride, Mountain Village, and San Miguel County since 2012.'
+    );
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background scroll-smooth">
       <Navigation currentPage="about" />
+      <Breadcrumbs items={[{ label: "About" }]} />
 
       {/* Hero Section */}
       <section className="py-20 bg-muted/30">
@@ -31,9 +38,9 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
               <div className="mb-6 md:mb-0">
-                <img 
+                <LazyImage 
                   src="/lovable-uploads/3c32e789-3fa1-4017-ad90-55b698ddd5e4.png" 
-                  alt="Sam Schlepphorst working professionally on tree removal in Telluride" 
+                  alt="Sam Schlepphorst, ISA Certified Arborist, performing professional tree removal work in Telluride Colorado with safety equipment and expertise" 
                   className="w-full max-w-sm mx-auto md:float-right md:ml-6 md:mb-4 h-48 md:h-60 object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -113,9 +120,9 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-start">
             {/* Left Column: ISA Logo and Credentials */}
             <div className="text-center order-2 lg:order-1">
-              <img 
+              <LazyImage 
                 src="/lovable-uploads/f69024ac-6287-4156-b8dc-a62605ce4827.png" 
-                alt="ISA Certified Arborist Logo" 
+                alt="ISA International Society of Arboriculture Certified Arborist official logo and certification badge" 
                 className="w-48 sm:w-64 h-auto mx-auto mb-4"
               />
               <div className="text-sm font-medium text-foreground">

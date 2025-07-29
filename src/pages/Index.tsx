@@ -14,7 +14,7 @@ const Index = () => {
   console.log('Index page rendering...');
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background scroll-smooth">
       <Navigation currentPage="home" />
       <Hero />
       <ServicesSection />

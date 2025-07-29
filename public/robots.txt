@@ -20,6 +20,12 @@ Crawl-delay: 2
 # Sitemaps
 Sitemap: https://sawpittree.com/sitemap.xml
 
+# Performance directives
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+
 # Important pages for tree removal Telluride
 Allow: /about
 Allow: /#services
