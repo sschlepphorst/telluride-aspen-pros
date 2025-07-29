@@ -173,7 +173,7 @@ const Index = () => {
               Free Estimate
             </Button>
           </div>
-          <p className="text-muted-foreground text-sm text-center mt-4 max-w-md mx-auto">
+          <p className="text-white font-bold text-sm text-center mt-4 max-w-md mx-auto">
             We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back
           </p>
         </div>
