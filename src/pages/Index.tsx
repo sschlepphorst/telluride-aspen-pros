@@ -1,12 +1,16 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Mail, MapPin, TreePine, Scissors, AlertTriangle, Shield, Wrench, Zap, Hammer, TreeDeciduous, Eye, FileText, Users, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, TreePine, Scissors, AlertTriangle, Shield, Wrench, Zap, Hammer, TreeDeciduous, Eye, FileText, Users, Instagram, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 console.log('Index page loading...');
 
 const Index = () => {
   console.log('Index page rendering...');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const services = [
     {
@@ -91,23 +95,48 @@ const Index = () => {
       <nav className="bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3">
               <img src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" alt="Sawpit Tree Company Logo" className="h-10 w-8" />
               <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
-            </div>
+            </Link>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
                 Tree Services
               </a>
-              <a href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                 About
-              </a>
+              </Link>
               <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </a>
               <Button asChild>
                 <a href="mailto:sschlepphorst@icloud.com?subject=Free%20Tree%20Service%20Quote%20Request">Get Free Quote</a>
               </Button>
+            </div>
+            <div className="md:hidden">
+              <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-5 w-5" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent>
+                  <div className="flex flex-col space-y-4 mt-6">
+                    <a href="#services" className="text-lg font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
+                      Tree Services
+                    </a>
+                    <Link to="/about" className="text-lg font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
+                      About
+                    </Link>
+                    <a href="#contact" className="text-lg font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
+                      Contact
+                    </a>
+                    <Button asChild className="mt-4">
+                      <a href="mailto:sschlepphorst@icloud.com?subject=Free%20Tree%20Service%20Quote%20Request">Get Free Quote</a>
+                    </Button>
+                  </div>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
@@ -136,7 +165,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
               <Phone className="mr-2 h-5 w-5" />
-              Call Now: (970) 708-4700
+              24 hour response and text for emergencies - immediate call back
             </Button>
             <Button size="lg" className="text-lg px-8 py-3 bg-primary hover:bg-primary/90">
               Free Estimate
@@ -240,7 +269,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-lg font-medium">(970) 708-4700</p>
-                <p className="text-muted-foreground">24/7 Emergency Tree Removal</p>
+                <p className="text-muted-foreground">24 hour response and text for emergencies - immediate call back</p>
               </CardContent>
             </Card>
             
