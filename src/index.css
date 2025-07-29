@@ -106,3 +106,30 @@
 .tree-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Mobile-first responsive utilities */
+@layer utilities {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+  
+  /* Mobile-specific improvements */
+  @media (max-width: 768px) {
+    .mobile-text-center {
+      text-align: center;
+    }
+    
+    .mobile-full-width {
+      width: 100%;
+    }
+  }
+}

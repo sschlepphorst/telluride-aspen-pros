@@ -144,36 +144,36 @@ const Index = () => {
 
       {/* Hero Section */}
       <section 
-        className="relative py-32 text-white overflow-hidden"
+        className="relative py-16 md:py-32 text-white overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/c3d81b59-4845-4bcf-8bbe-fb1a70ff99c0.png)`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
             Sawpit Tree Company
           </h1>
-          <p className="text-lg md:text-xl mb-6 font-medium">
+          <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 font-medium leading-relaxed max-w-4xl mx-auto">
             Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County | Fully Insured
           </p>
-          <p className="text-lg md:text-xl mb-12 opacity-90">
+          <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-12 opacity-90 max-w-3xl mx-auto">
             Professional tree removal, pruning, and emergency services in Colorado's high country
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild className="text-base px-6 py-3">
-              <a href="tel:+19707084700" className="flex items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-lg mx-auto">
+            <Button asChild className="text-base px-6 py-3 w-full sm:w-auto min-h-[44px]">
+              <a href="tel:+19707084700" className="flex items-center justify-center">
                 <Phone className="mr-2 h-4 w-4" />
                 Call (970) 708-4700
               </a>
             </Button>
-            <Button className="text-base px-6 py-3">
+            <Button className="text-base px-6 py-3 w-full sm:w-auto min-h-[44px]">
               Free Estimate
             </Button>
           </div>
-          <p className="text-white font-bold text-sm text-center mt-4 max-w-md mx-auto">
+          <p className="text-white font-bold text-xs sm:text-sm text-center mt-4 md:mt-6 max-w-md mx-auto leading-relaxed">
             We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back
           </p>
         </div>
@@ -196,15 +196,15 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
             {services.map((service) => (
-              <Card key={service.title} className="tree-shadow hover:shadow-lg transition-shadow">
-                <CardHeader className="text-center pb-3">
-                  <service.icon className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-sm font-semibold leading-tight">{service.title}</CardTitle>
+              <Card key={service.title} className="tree-shadow hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardHeader className="text-center pb-3 p-4 sm:p-6">
+                  <service.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary mx-auto mb-2 sm:mb-3" />
+                  <CardTitle className="text-sm sm:text-base font-semibold leading-tight">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0">
-                  <CardDescription className="text-center text-xs leading-relaxed">
+                <CardContent className="pt-0 px-4 pb-4 sm:px-6 sm:pb-6">
+                  <CardDescription className="text-center text-xs sm:text-sm leading-relaxed">
                     {service.description}
                   </CardDescription>
                 </CardContent>
@@ -266,39 +266,39 @@ const Index = () => {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
             <Card className="text-center">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <Phone className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle>Call for Tree Service</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Call for Tree Service</CardTitle>
               </CardHeader>
               <CardContent>
-                <Button asChild variant="outline" className="mb-3">
-                  <a href="tel:+19707084700" className="text-lg font-medium">Call (970) 708-4700</a>
+                <Button asChild variant="outline" className="mb-3 min-h-[44px] w-full sm:w-auto">
+                  <a href="tel:+19707084700" className="text-base sm:text-lg font-medium">Call (970) 708-4700</a>
                 </Button>
-                <p className="text-muted-foreground text-sm">We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <Mail className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle>Email for Quotes</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Email for Quotes</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-medium">sschlepphorst@icloud.com</p>
-                <p className="text-muted-foreground">Free tree removal estimates</p>
+                <p className="text-base sm:text-lg font-medium break-all">sschlepphorst@icloud.com</p>
+                <p className="text-muted-foreground text-sm">Free tree removal estimates</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle>Service Coverage</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Service Coverage</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-medium">Telluride & Mountain Village</p>
-                <p className="text-muted-foreground">San Miguel County tree services</p>
+                <p className="text-base sm:text-lg font-medium">Telluride & Mountain Village</p>
+                <p className="text-muted-foreground text-sm">San Miguel County tree services</p>
               </CardContent>
             </Card>
           </div>
@@ -317,15 +317,15 @@ const Index = () => {
               Professional tree removal and emergency services in Telluride, Colorado. 
               Certified, insured and locally owned.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
               <span>Tree Removal Telluride</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>Emergency Tree Service</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>Mountain Village Tree Care</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>Certified Arborist</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>San Miguel County</span>
             </div>
           </div>

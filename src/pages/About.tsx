@@ -54,11 +54,13 @@ const About = () => {
           
           <div className="max-w-4xl mx-auto">
             <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
-              <img 
-                src="/lovable-uploads/3c32e789-3fa1-4017-ad90-55b698ddd5e4.png" 
-                alt="Sam Schlepphorst working professionally on tree removal in Telluride" 
-                className="float-right ml-6 mb-4 w-64 h-48 object-cover rounded-lg shadow-lg md:w-80 md:h-60"
-              />
+              <div className="mb-6 md:mb-0">
+                <img 
+                  src="/lovable-uploads/3c32e789-3fa1-4017-ad90-55b698ddd5e4.png" 
+                  alt="Sam Schlepphorst working professionally on tree removal in Telluride" 
+                  className="w-full max-w-sm mx-auto md:float-right md:ml-6 md:mb-4 h-48 md:h-60 object-cover rounded-lg shadow-lg"
+                />
+              </div>
               <p>
                 Sam Schlepphorst, the owner of the company, brings over a decade of hands-on experience in professional tree care throughout the Telluride and Mountain Village areas. With a strong reputation for quality, safety, and environmental stewardship, Sam has become a trusted name in the regional arboriculture community.
               </p>
@@ -133,13 +135,13 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-start">
             {/* Left Column: ISA Logo and Credentials */}
-            <div className="text-center">
+            <div className="text-center order-2 lg:order-1">
               <img 
                 src="/lovable-uploads/f69024ac-6287-4156-b8dc-a62605ce4827.png" 
                 alt="ISA Certified Arborist Logo" 
-                className="w-64 h-auto mx-auto mb-4"
+                className="w-48 sm:w-64 h-auto mx-auto mb-4"
               />
               <div className="text-sm font-medium text-foreground">
                 <div>Samuel Schlepphorst</div>
@@ -148,7 +150,7 @@ const About = () => {
             </div>
 
             {/* Right Column: Professional Resource Links */}
-            <div className="grid grid-cols-1 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-1 gap-2 order-1 lg:order-2">
               <a 
                 href="https://www.isa-arbor.com" 
                 target="_blank" 
@@ -233,7 +235,7 @@ const About = () => {
               Professional tree services throughout the greater Telluride area
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               { area: "Telluride, Colorado", description: "Downtown and residential tree services" },
               { area: "Mountain Village", description: "Ski resort and luxury home tree care" },
@@ -243,12 +245,12 @@ const About = () => {
               { area: "San Miguel County", description: "Complete county-wide coverage available" }
             ].map((location) => (
               <Card key={location.area} className="text-center">
-                <CardHeader>
+                <CardHeader className="pb-3">
                   <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">{location.area}</CardTitle>
+                  <CardTitle className="text-base sm:text-lg">{location.area}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{location.description}</CardDescription>
+                  <CardDescription className="text-sm">{location.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -266,14 +268,14 @@ const About = () => {
             Get a free consultation from Sam and see why Telluride, Mountain Village, and 
             San Miguel County trust Sawpit Tree Company for all their tree care needs
           </p>
-          <div className="flex justify-center">
-            <Button asChild className="text-base px-6 py-3">
-              <a href="tel:+19707084700" className="flex items-center">
+          <div className="flex flex-col items-center space-y-4">
+            <Button asChild className="text-base px-6 py-3 min-h-[44px] w-full sm:w-auto">
+              <a href="tel:+19707084700" className="flex items-center justify-center">
                 <Phone className="mr-2 h-4 w-4" />
                 Call (970) 708-4700
               </a>
             </Button>
-            <p className="text-white font-bold text-sm text-center mt-4 max-w-md mx-auto">
+            <p className="text-muted-foreground font-medium text-xs sm:text-sm text-center max-w-md mx-auto leading-relaxed">
               We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back
             </p>
           </div>
