@@ -1,9 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TreePine, Award, Users, Shield, MapPin, Clock, Phone, ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom";
+import { TreePine, Award, Shield, MapPin, Phone, ExternalLink } from "lucide-react";
 import { useEffect } from "react";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { detailedServiceAreas } from "@/constants/serviceAreas";
 
 const About = () => {
   useEffect(() => {
@@ -12,33 +14,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" 
-                alt="Sawpit Tree Company Logo" 
-                className="h-10 w-8 object-contain"
-              />
-              <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
-            </Link>
-            <div className="hidden md:flex items-center space-x-6">
-              <a href="/#services" className="text-muted-foreground hover:text-primary transition-colors">
-                Tree Services
-              </a>
-              <span className="text-primary font-medium">About</span>
-              <a href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
-                Contact
-              </a>
-              <Button asChild>
-                <a href="mailto:sschlepphorst@icloud.com?subject=Free%20Tree%20Service%20Quote%20Request">Get Free Quote</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="about" />
 
       {/* Hero Section */}
       <section className="py-20 bg-muted/30">
@@ -122,10 +98,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* About Sam Section */}
+      {/* Professional Resources Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Professional Resources
@@ -220,7 +195,6 @@ const About = () => {
               </a>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -236,14 +210,7 @@ const About = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {[
-              { area: "Telluride, Colorado", description: "Downtown and residential tree services" },
-              { area: "Mountain Village", description: "Ski resort and luxury home tree care" },
-              { area: "Ophir, Colorado", description: "Rural and ranch property tree management" },
-              { area: "Sawpit Area", description: "Remote property access and emergency services" },
-              { area: "Placerville", description: "Historic area tree preservation and removal" },
-              { area: "San Miguel County", description: "Complete county-wide coverage available" }
-            ].map((location) => (
+            {detailedServiceAreas.map((location) => (
               <Card key={location.area} className="text-center">
                 <CardHeader className="pb-3">
                   <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
@@ -282,22 +249,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <img 
-              src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" 
-              alt="Sawpit Tree Company Logo" 
-              className="h-8 w-6 object-contain"
-            />
-            <span className="text-xl font-bold">Sawpit Tree Company</span>
-          </div>
-          <p className="text-muted-foreground">
-            Professional tree services you can trust. Certified, insured and locally owned.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

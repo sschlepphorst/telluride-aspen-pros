@@ -1,220 +1,24 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Mail, MapPin, TreePine, Scissors, AlertTriangle, Shield, Wrench, Zap, Hammer, TreeDeciduous, Eye, FileText, Users, Instagram, Menu } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Card, CardContent } from "@/components/ui/card";
+import { Instagram } from "lucide-react";
+import { Navigation } from "@/components/Navigation";
+import { Hero } from "@/components/Hero";
+import { ServicesSection } from "@/components/ServicesSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 console.log('Index page loading...');
 
 const Index = () => {
   console.log('Index page rendering...');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const services = [
-    {
-      title: "Tree Removal",
-      description: "Safe and efficient removal of hazardous or unwanted trees in Telluride's mountain environment",
-      icon: TreePine,
-    },
-    {
-      title: "Tree Pruning",
-      description: "Expert pruning services to maintain tree health and safety in Colorado's high altitude climate",
-      icon: Scissors,
-    },
-    {
-      title: "Hazard Tree Removal",
-      description: "Identification and removal of dangerous trees that pose risks to property and safety",
-      icon: AlertTriangle,
-    },
-    {
-      title: "Tree Cabling and Bracing",
-      description: "Structural support systems to preserve valuable trees and prevent failure",
-      icon: Wrench,
-    },
-    {
-      title: "Storm Clean Up",
-      description: "Rapid response for storm damage cleanup and debris removal throughout the region",
-      icon: Zap,
-    },
-    {
-      title: "Emergency Tree Work",
-      description: "24/7 emergency response for fallen trees and urgent tree hazards",
-      icon: Phone,
-    },
-    {
-      title: "Forestry Projects",
-      description: "Large-scale forest management and timber operations for mountain properties",
-      icon: TreeDeciduous,
-    },
-    {
-      title: "Fire Mitigation",
-      description: "Defensible space creation and fuel reduction to protect properties from wildfire",
-      icon: Shield,
-    },
-    {
-      title: "Lot Clearing",
-      description: "Complete lot and land clearing for construction and development projects",
-      icon: Hammer,
-    },
-    {
-      title: "View Clearing / Viewshed",
-      description: "Strategic tree removal and pruning to restore and enhance mountain views",
-      icon: Eye,
-    },
-    {
-      title: "Clearance Pruning",
-      description: "Pruning trees away from structures, power lines, and other infrastructure",
-      icon: Scissors,
-    },
-    {
-      title: "Consulting",
-      description: "Professional arborist consultations for tree health, risk assessment, and management planning",
-      icon: FileText,
-    },
-    {
-      title: "Arborist Services",
-      description: "Comprehensive tree care services from certified arborist expertise",
-      icon: Users,
-    },
-  ];
-
-  const serviceAreas = [
-    "Telluride, Colorado",
-    "Mountain Village",
-    "Ophir",
-    "Sawpit",
-    "San Miguel County",
-    "Surrounding Mountain Communities"
-  ];
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="flex items-center space-x-3">
-              <img src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" alt="Sawpit Tree Company Logo" className="h-10 w-8" />
-              <span className="text-2xl font-bold text-foreground">Sawpit Tree Company</span>
-            </Link>
-            <div className="hidden md:flex items-center space-x-6">
-              <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-                Tree Services
-              </a>
-              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                About
-              </Link>
-              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
-                Contact
-              </a>
-              <Button asChild>
-                <a href="mailto:sschlepphorst@icloud.com?subject=Free%20Tree%20Service%20Quote%20Request">Get Free Quote</a>
-              </Button>
-            </div>
-            <div className="md:hidden">
-              <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <Menu className="h-5 w-5" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent>
-                  <div className="flex flex-col space-y-4 mt-6">
-                    <a href="#services" className="text-lg font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
-                      Tree Services
-                    </a>
-                    <Link to="/about" className="text-lg font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
-                      About
-                    </Link>
-                    <a href="#contact" className="text-lg font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
-                      Contact
-                    </a>
-                    <Button asChild className="mt-4">
-                      <a href="mailto:sschlepphorst@icloud.com?subject=Free%20Tree%20Service%20Quote%20Request">Get Free Quote</a>
-                    </Button>
-                  </div>
-                </SheetContent>
-              </Sheet>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section 
-        className="relative py-16 md:py-32 text-white overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/c3d81b59-4845-4bcf-8bbe-fb1a70ff99c0.png)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
-            Sawpit Tree Company
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 font-medium leading-relaxed max-w-4xl mx-auto">
-            Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County | Fully Insured
-          </p>
-          <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-12 opacity-90 max-w-3xl mx-auto">
-            Professional tree removal, pruning, and emergency services in Colorado's high country
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-lg mx-auto">
-            <Button asChild className="text-base px-6 py-3 w-full sm:w-auto min-h-[44px]">
-              <a href="tel:+19707084700" className="flex items-center justify-center">
-                <Phone className="mr-2 h-4 w-4" />
-                Call (970) 708-4700
-              </a>
-            </Button>
-            <Button className="text-base px-6 py-3 w-full sm:w-auto min-h-[44px]">
-              Free Estimate
-            </Button>
-          </div>
-          <p className="text-white font-bold text-xs sm:text-sm text-center mt-4 md:mt-6 max-w-md mx-auto leading-relaxed">
-            We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back
-          </p>
-        </div>
-      </section>
-
-
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Professional Tree Services in Telluride
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-2">
-              From emergency storm damage cleanup to routine tree maintenance, our certified arborist 
-              provides comprehensive tree care solutions for Colorado mountain properties
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Serving Telluride, Mountain Village, and San Miguel County region
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
-            {services.map((service) => (
-              <Card key={service.title} className="tree-shadow hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <CardHeader className="text-center pb-3 p-4 sm:p-6">
-                  <service.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary mx-auto mb-2 sm:mb-3" />
-                  <CardTitle className="text-sm sm:text-base font-semibold leading-tight">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0 px-4 pb-4 sm:px-6 sm:pb-6">
-                  <CardDescription className="text-center text-xs sm:text-sm leading-relaxed">
-                    {service.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
+      <Navigation currentPage="home" />
+      <Hero />
+      <ServicesSection />
+      
       {/* Instagram Section */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,80 +61,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Contact Information
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <Phone className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle className="text-lg sm:text-xl">Call for Tree Service</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="mb-3 min-h-[44px] w-full sm:w-auto">
-                  <a href="tel:+19707084700" className="text-base sm:text-lg font-medium">Call (970) 708-4700</a>
-                </Button>
-                <p className="text-muted-foreground text-sm leading-relaxed">We aim to return all calls within 24 hours. For urgent concerns, please send a text to request an immediate call back</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <Mail className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle className="text-lg sm:text-xl">Email for Quotes</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-base sm:text-lg font-medium break-all">sschlepphorst@icloud.com</p>
-                <p className="text-muted-foreground text-sm">Free tree removal estimates</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle className="text-lg sm:text-xl">Service Coverage</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-base sm:text-lg font-medium">Telluride & Mountain Village</p>
-                <p className="text-muted-foreground text-sm">San Miguel County tree services</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <img src="/lovable-uploads/e6b55972-7fd4-4aa2-8ae3-cf185237e576.png" alt="Sawpit Tree Company Logo" className="h-8 w-6" />
-              <span className="text-xl font-bold">Sawpit Tree Company</span>
-            </div>
-            <p className="text-muted-foreground mb-4">
-              Professional tree removal and emergency services in Telluride, Colorado. 
-              Certified, insured and locally owned.
-            </p>
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
-              <span>Tree Removal Telluride</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Emergency Tree Service</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Mountain Village Tree Care</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Certified Arborist</span>
-              <span className="hidden sm:inline">•</span>
-              <span>San Miguel County</span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <ContactSection />
+      <Footer />
     </div>
   );
 };
