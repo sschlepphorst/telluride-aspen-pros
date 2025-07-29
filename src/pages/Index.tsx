@@ -157,7 +157,7 @@ const Index = () => {
             Sawpit Tree Company
           </h1>
           <p className="text-xl md:text-2xl mb-6 font-medium">
-            Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County
+            Certified Arborist | Emergency Tree Services | Mountain Village & San Miguel County | Fully Insured
           </p>
           <p className="text-lg md:text-xl mb-12 opacity-90">
             Professional tree removal, pruning, and emergency services in Colorado's high country
