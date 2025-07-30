@@ -43,8 +43,15 @@ const Index = () => {
               src="https://cdn.lightwidget.com/widgets/131e46cb3f375a68aaf4be1b8281e9e0.html" 
               scrolling="no" 
               allowTransparency={true}
-              className="lightwidget-widget"
-              style={{width: '100%', border: 0, overflow: 'hidden'}}
+              className="w-full border-0 overflow-hidden rounded-lg"
+              style={{ 
+                width: '100%', 
+                height: '600px',
+                minHeight: '600px',
+                border: 0, 
+                overflow: 'hidden'
+              }}
+              title="Instagram feed showing full square posts"
             />
           </div>
         </div>
