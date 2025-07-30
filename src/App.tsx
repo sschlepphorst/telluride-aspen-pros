@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import TellurideTreeServices from "./pages/TellurideTreeServices";
+import MountainVillageTreeRemoval from "./pages/MountainVillageTreeRemoval";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
+              <Route path="/telluride-tree-services" element={<TellurideTreeServices />} />
+              <Route path="/mountain-village-tree-removal" element={<MountainVillageTreeRemoval />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

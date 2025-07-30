@@ -7,14 +7,15 @@ export const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Professional Tree Services in Telluride
+            Professional Tree Services in Telluride, Colorado
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-2">
-            From emergency storm damage cleanup to routine tree maintenance, our certified arborist 
-            provides comprehensive tree care solutions for Colorado mountain properties
+            Certified arborist providing expert tree removal, tree trimming, and emergency tree services 
+            in Telluride, Mountain Village, and throughout San Miguel County. Trusted local tree company 
+            with years of experience serving Colorado mountain communities.
           </p>
           <p className="text-lg text-muted-foreground">
-            Serving Telluride, Mountain Village, and San Miguel County region
+            Emergency tree removal available 24/7 • Licensed & insured tree service company • Free estimates
           </p>
         </div>
         
