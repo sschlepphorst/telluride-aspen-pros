@@ -6,7 +6,7 @@ import { Hero } from "@/components/Hero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
-import { InstagramFeed } from "@/components/InstagramFeed";
+
 
 console.log('Index page loading...');
 
@@ -36,7 +36,18 @@ const Index = () => {
             </Button>
           </div>
           
-          <InstagramFeed />
+          {/* LightWidget Instagram Feed */}
+          <div className="w-full">
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe 
+              src="//lightwidget.com/widgets/131e46cb3f375a68aaf4be1b8281e9e0.html" 
+              scrolling="no" 
+              allowTransparency={true}
+              className="w-full border-0 overflow-hidden rounded-lg"
+              style={{ minHeight: '400px' }}
+              title="Instagram feed for Saw Pit Tree Company"
+            />
+          </div>
         </div>
       </section>
 
