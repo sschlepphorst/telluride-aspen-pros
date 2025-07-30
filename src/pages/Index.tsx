@@ -40,12 +40,11 @@ const Index = () => {
           <div className="w-full">
             <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
             <iframe 
-              src="//lightwidget.com/widgets/131e46cb3f375a68aaf4be1b8281e9e0.html" 
+              src="https://cdn.lightwidget.com/widgets/131e46cb3f375a68aaf4be1b8281e9e0.html" 
               scrolling="no" 
               allowTransparency={true}
-              className="w-full border-0 overflow-hidden rounded-lg"
-              style={{ minHeight: '400px' }}
-              title="Instagram feed for Saw Pit Tree Company"
+              className="lightwidget-widget"
+              style={{width: '100%', border: 0, overflow: 'hidden'}}
             />
           </div>
         </div>
