@@ -1,12 +1,12 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Instagram } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { InstagramFeed } from "@/components/InstagramFeed";
 
 console.log('Index page loading...');
 
@@ -36,28 +36,7 @@ const Index = () => {
             </Button>
           </div>
           
-          {/* Instagram Preview Placeholder */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              "Emergency tree removal - Mountain Village storm damage",
-              "Aspen grove pruning - Telluride residential property", 
-              "Large pine removal - San Miguel County ranch"
-            ].map((description, i) => (
-              <Card key={i} className="overflow-hidden">
-                <div className="aspect-square bg-muted flex items-center justify-center">
-                  <Instagram className="h-12 w-12 text-muted-foreground" />
-                </div>
-                <CardContent className="p-4">
-                  <p className="text-sm text-muted-foreground font-medium">
-                    {description}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    Instagram video preview - follow for full content
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <InstagramFeed />
         </div>
       </section>
 
