@@ -14,45 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      instagram_posts: {
-        Row: {
-          caption: string | null
-          created_at: string
-          id: string
-          instagram_id: string
-          media_type: string
-          media_url: string | null
-          permalink: string
-          thumbnail_url: string | null
-          timestamp: string
-          updated_at: string
-        }
-        Insert: {
-          caption?: string | null
-          created_at?: string
-          id?: string
-          instagram_id: string
-          media_type: string
-          media_url?: string | null
-          permalink: string
-          thumbnail_url?: string | null
-          timestamp: string
-          updated_at?: string
-        }
-        Update: {
-          caption?: string | null
-          created_at?: string
-          id?: string
-          instagram_id?: string
-          media_type?: string
-          media_url?: string | null
-          permalink?: string
-          thumbnail_url?: string | null
-          timestamp?: string
-          updated_at?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
